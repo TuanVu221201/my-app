@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/responsive.css">
+  <link rel="icon" href="%PUBLIC_URL%/images/fevicon.png" type="image/gif" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    media="screen">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+      });
+
+      $(".zoom").hover(function () {
+
+        $(this).addClass('transition');
+      }, function () {
+
+        $(this).removeClass('transition');
+      });
+    });
+    $(document).ready(function () {
+      $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+      });
+
+      $(".zoom").hover(function () {
+
+        $(this).addClass('transition');
+      }, function () {
+
+        $(this).removeClass('transition');
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    function checkEmail() {
+      var email = document.getElementById('email');
+      var name = document.getElementById('name');
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      var filter1 = /^([a-zA-Z0-9.,/ $@()])+$/;
+      if (!filter1.test(name.value)) {
+        alert('Hay nhap ten hop le.');
+        name.focus;
+        return false;
+      }
+      if (!filter.test(email.value)) {
+        alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+        email.focus;
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>
