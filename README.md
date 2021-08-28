@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mở GIT/cmd và chạy câu lệnh 'npm install' (để cái node_modules cho app)
+Sau đó chạy câu lệnh npm start (để mở app).
 
 ## Available Scripts
 
