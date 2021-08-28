@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 Mở GIT/cmd và chạy câu lệnh 'npm install' (để cái node_modules cho app)
+
 Sau đó chạy câu lệnh npm start (để mở app).
 
 ## Available Scripts
